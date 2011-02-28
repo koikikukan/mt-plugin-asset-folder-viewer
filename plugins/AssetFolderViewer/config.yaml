@@ -1,0 +1,22 @@
+# AssetFolderViewer
+#
+# Release 0.01 (Mar 01, 2011)
+#
+# Copyright (c) 2004-2010 Yujiro Araki
+
+name: AssetFolderViewer
+id: AssetFolderViewer
+author_link: http://www.koikikukan.com/
+author_name: Yujiro Araki
+plugin_link: http://www.koikikukan.com/archives/2010/12/27-015555.php
+doc_link: http://www.koikikukan.com/archives/2010/12/27-015555.php
+description: <__trans phrase="AssetFolderViewer.">
+version: 0.01
+l10n_lexicon:
+    ja:
+        AssetFolderViewer.: アイテム一覧にフォルダ名を表示します
+applications:
+    cms:
+        callbacks:
+            MT::App::CMS::template_source.asset_table: $AssetFolderViewer::AssetFolderViewer::CMS::asset_table
+            app_pre_listing_list_asset: $AssetFolderViewer::AssetFolderViewer::CMS::list_asset
